@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HELLO EVERYONE"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView"
+        android:visibility="gone"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="20dp"
+        android:text="Press Here"
+        android:onClick="Start" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/button"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="20dp"
+        android:text="HI"
+        android:visibility="visible"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:text="Mehul"
+        android:layout_below="@+id/editText"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="20dp"
+        android:checked="false"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/checkBox">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/rbMale"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:id="@+id/rbFmale"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Others"
+        android:id="@+id/rbothers"/>
+    </RadioGroup>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progress="20"
+        android:max="100"
+        android:layout_marginTop="20dp"/>
+     <ImageView
+         android:layout_width="700dp"
+         android:layout_height="700dp"
+         android:layout_below="@id/progressBar"
+         android:src="@mipmap/ic_bff"
+         android:id="@+id/imageView"
+         android:visibility="gone"/>
+
+
+
+</RelativeLayout>
